@@ -8,8 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build immortalwrt Redmi-AX6 plus
-
+name: Build_flawrt_test
 on:
   repository_dispatch:
   workflow_dispatch:
@@ -206,7 +205,7 @@ jobs:
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         repository: ${{ github.repository }}
-        delete_workflow_pattern: Build immortalwrt Redmi-AX6 plus
+        delete_workflow_pattern: Build_flawrt_test
         retain_days: 30
         keep_minimum_runs: 10
 
